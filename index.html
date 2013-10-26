@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Expense</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/normalize.css" rel="stylesheet" media="all">
+    <link href="css/pepper-grinder/jquery-ui.min.css" rel="stylesheet" media="all">
+    <link href="css/pepper-grinder/jquery.ui.theme.css" rel="stylesheet" media="all">
+	<link href="css/styles.css" rel="stylesheet" media="all">
+	<!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+</head>
+<body>
+	<header role="banner">
+		<h1>Expense</h1>
+		<nav role="navigation"></nav>
+	</header>
+	<div class="wrap">
+		<main role="main">
+		<div class="ss-form">
+            <form action="https://docs.google.com/spreadsheet/formResponse?formkey=dFR2NnBHMzdDaHJ5eUY1aVotTzdmNEE6MQ&amp;theme=0AX42CRMsmRFbUy1lNjA2ZGVkNy0yYjViLTRiNzQtYWZhYy0yNjI0OGQ0NTlhODE&amp;ifq" method="POST" id="ss-form">
+                <div class="row">
+                    <div class="ss-item ss-item-required ss-text">
+                        <div class="ss-form-entry">
+                            <label class="ss-q-title" for="entry_0">Date<span class="ss-required-asterisk">*</span></label>
+                            <label class="ss-q-help" for="entry_0"></label>
+                            <input type="text" name="entry.0.single" value="" class="ss-q-short" id="entry_0" readonly>
+                        </div>
+                    </div>
+                </div>
+<hr>
+                <div class="row">
+                    <div class="ss-item ss-item-required ss-select left">
+                        <div class="ss-form-entry">
+                            <label class="ss-q-title" for="entry_1">Item Name / Description<span class="ss-required-asterisk">*</span></label>
+                            <label class="ss-q-help" for="entry_1"></label>
+                            <div>
+                            <select name="entry.1.single" id="entry_1">
+                                <option value="飯">飯</option>
+                                <option value="飯材料">飯材料</option>
+                                <option value="tabaco">tabaco</option>
+                                <option value="drink">drink</option>
+                                <option value="snack">snack</option>
+                                <option value="cafe">cafe</option>
+                                <option value="coffee beans">coffee beans</option>
+                                <option value="NOT A REGULAR">NOT A REGULAR</option>
+                            </select>
+                            <input type="text" name="entry.2.single" value="" class="ss-q-short" id="entry_2">
+                            </div>
+                        </div>
+                    </div>
+<!--
+                    <div class="ss-item  ss-text left">
+                        <div class="ss-form-entry">
+                            <label class="ss-q-title" for="entry_2"></label>
+                            <label class="ss-q-help" for="entry_2"></label>
+                            <p>
+                            <input type="text" name="entry.2.single" value="" class="ss-q-short" id="entry_2">
+                            </p>
+                        </div>
+                    </div>
+-->
+                </div>
+<br>
+                <div class="row">
+                    <div class="ss-item ss-item-required ss-select indented">
+                        <div class="ss-form-entry">
+                            <label class="ss-q-title" for="entry_3">Quantity<span class="ss-required-asterisk">*</span></label>
+                            <label class="ss-q-help" for="entry_3"></label>
+                            <select name="entry.3.single" id="entry_3"><option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option> <option value="6">6</option> <option value="7">7</option> <option value="8">8</option> <option value="9">9</option> <option value="10">10</option> <option value="more">more</option></select>
+                        </div>
+                    </div>
+                </div>
+<br>
+                <div class="row">
+                    <div class="ss-item ss-item-required ss-select indented">
+                        <div class="ss-form-entry">
+                            <label class="ss-q-title" for="entry_6">Category<span class="ss-required-asterisk">*</span></label>
+                            <label class="ss-q-help" for="entry_6"></label>
+                            <select name="entry.6.single" id="entry_6"><option value="Food / Drinks">Food / Drinks</option> <option value="Livingwares">Livingwares</option> <option value="Clothings">Clothings</option> <option value="Gadgets">Gadgets</option> <option value="Music">Music</option> <option value="Books">Books</option> <option value="Softwares">Softwares</option> <option value="Mental wares">Mental wares</option> <option value="Gift">Gift</option> <option value="Social expense">Social expense</option> <option value="Transportation">Transportation</option> <option value="Health services">Health services</option> <option value="Internet services">Internet services</option> <option value="Other services">Other services</option></select>
+                        </div>
+                    </div>
+                </div>
+<br>
+                <div class="row">
+                    <div class="ss-item ss-item-required ss-select left indented">
+                        <div class="ss-form-entry">
+                            <label class="ss-q-title" for="entry_7">Store Name<span class="ss-required-asterisk">*</span></label>
+                            <label class="ss-q-help" for="entry_7"></label>
+                            <div>
+                            <select name="entry.7.single" id="entry_7">
+                                <option value="Family Mart">Family Mart</option>
+                                <option value="Other kombini">Other kombini</option>
+                                <option value="ライフ">ライフ</option>
+                                <option value="小麦の郷">小麦の郷</option>
+                                <option value="吉野家">吉野家</option>
+                                <option value="熊吉">熊吉</option>
+                                <option value="やよい軒">やよい軒</option>
+                                <option value="CoCo壱番">CoCo壱番</option>
+                                <option value="Mandai">Mandai</option>
+                                <option value="Daiso">Daiso</option>
+                                <option value="有機茶寮">有機茶寮</option>
+                                <option value="郵便局">郵便局</option>
+                                <option value="阪急OASIS">阪急OASIS</option>
+                                <option value="NOT A REGULAR">NOT A REGULAR</option>
+                            </select>
+                            <input type="text" name="entry.8.single" value="" class="ss-q-short" id="entry_8">
+                            </div>
+                        </div>
+                    </div>
+<!--
+                    <div class="ss-item  ss-text left">
+                        <div class="ss-form-entry">
+                            <label class="ss-q-title" for="entry_8"></label>
+                            <label class="ss-q-help" for="entry_8"></label>
+                            <p>
+                            <input type="text" name="entry.8.single" value="" class="ss-q-short" id="entry_8">
+                            </p>
+                        </div>
+                    </div>
+ -->
+                </div>
+<hr>
+                <div class="row">
+                    <div class="ss-item ss-item-required ss-text">
+                        <div class="ss-form-entry">
+                            <label class="ss-q-title" for="entry_4">Amount<span class="ss-required-asterisk">*</span></label>
+                            <label class="ss-q-help" for="entry_4"></label>
+                            <input type="text" name="entry.4.single" value="" class="ss-q-short" id="entry_4">
+                        </div>
+                    </div>
+                </div>
+<br>
+                <div class="row">
+                    <div class="ss-item ss-item-required ss-select indented">
+                        <div class="ss-form-entry">
+                            <label class="ss-q-title" for="entry_9">Source<span class="ss-required-asterisk">*</span></label>
+                            <label class="ss-q-help" for="entry_9"></label>
+                            <select name="entry.9.single" id="entry_9"><option value="Cash">Cash</option> <option value="Suruga Debit">Suruga Debit</option> <option value="UBOC Debit">UBOC Debit</option> <option value="FNBO Credit">FNBO Credit</option></select>
+                        </div>
+                    </div>
+                </div>
+<br>
+                <div class="row">
+                    <div class="ss-item ss-item-required ss-select indented">
+                        <div class="ss-form-entry">
+                            <label class="ss-q-title" for="entry_13">Receipt<span class="ss-required-asterisk">*</span></label>
+                            <label class="ss-q-help" for="entry_13"></label>
+                            <select name="entry.13.single" id="entry_13"><option value="Paper">Paper</option> <option value="Email">Email</option> <option value="File">File</option> <option value="Downloadable">Downloadable</option> <option value="none">none</option></select>
+                        </div>
+                    </div>
+                </div>
+<hr>
+                <div class="row">
+                    <div class="ss-item  ss-paragraph-text">
+                        <div class="ss-form-entry">
+                            <label class="ss-q-title" for="entry_10">Note</label>
+                            <label class="ss-q-help" for="entry_10"></label>
+                            <textarea name="entry.10.single" rows="8" cols="18" class="ss-q-long" id="entry_10"></textarea>
+                        </div>
+                    </div>
+                </div>
+<br>
+                <div class="row">
+                    <div class="ss-item ss-item-required ss-checkbox left">
+                        <div class="ss-form-entry">
+                            <label class="ss-q-title" for="entry_5">Spent For<span class="ss-required-asterisk">*</span></label>
+                            <label class="ss-q-help" for="entry_5"></label>
+                            <ul class="ss-choices"><li class="ss-choice-item"><label class="ss-choice-label"><input type="checkbox" name="entry.5.group" checked="" value="me" class="ss-q-checkbox" id="group_5_1">
+                            me</label></li> <li class="ss-choice-item"><label class="ss-choice-label"><input type="checkbox" name="entry.5.group" value="family" class="ss-q-checkbox" id="group_5_2">
+                            family</label></li> <li class="ss-choice-item"><label class="ss-choice-label"><input type="checkbox" name="entry.5.group" value="others" class="ss-q-checkbox" id="group_5_3">
+                            others</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ss-item ss-item-required ss-radio left">
+                        <div class="ss-form-entry">
+                            <label class="ss-q-title" for="entry_11">Tax Deductable<span class="ss-required-asterisk">*</span></label>
+                            <label class="ss-q-help" for="entry_11"></label>
+                            <ul class="ss-choices"><li class="ss-choice-item"><label class="ss-choice-label"><input type="radio" name="entry.11.group" value="Yes" class="ss-q-radio" id="group_11_1">
+                            Yes</label></li> <li class="ss-choice-item"><label class="ss-choice-label"><input type="radio" name="entry.11.group" checked="" value="No" class="ss-q-radio" id="group_11_2">
+                            No</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ss-item ss-item-required ss-radio left">
+                        <div class="ss-form-entry">
+                            <label class="ss-q-title" for="entry_12">Reimbursable<span class="ss-required-asterisk">*</span></label>
+                            <label class="ss-q-help" for="entry_12"></label>
+                            <ul class="ss-choices"><li class="ss-choice-item"><label class="ss-choice-label"><input type="radio" name="entry.12.group" value="Yes" class="ss-q-radio" id="group_12_1">
+                            Yes</label></li> <li class="ss-choice-item"><label class="ss-choice-label"><input type="radio" name="entry.12.group" checked="" value="No" class="ss-q-radio" id="group_12_2">
+                            No</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+<br>
+                <input type="hidden" name="pageNumber" value="0">
+                <input type="hidden" name="backupCache" value="">
+                <div class="ss-item ss-navigate">
+                    <div class="ss-form-entry">
+                        <input type="submit" name="submit" value="Post">
+                    </div>
+                </div>
+            </form>
+        </div>
+        </main>
+	</div>
+	<footer role="contentinfo">
+		<small>Copyright &copy; <time datetime="2013">2013</time></small>
+	</footer>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+		var _gaq=[['_setAccount','UA-XXXX-XX'],['_trackPageview']];(function(a,b){var c=a.createElement(b),d=a.getElementsByTagName(b)[0];c.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";d.parentNode.insertBefore(c,d)})(document,"script");
+	</script>
+</body>
+</html>
