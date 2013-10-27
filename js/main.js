@@ -37,8 +37,20 @@ $(function() {
     $("#entry_0").attr("value", mm + "/" + dd + "/" + yy).datepicker();
 
     //item name & store name field
+    var itemCatMap = {
+            "飯": "Food / Drinks",
+            "飯材料": "Food / Drinks",
+            "tabaco": "Mental wares",
+            "drink": "Food / Drinks",
+            "snack": "Food / Drinks",
+            "cafe": "Food / Drinks",
+            "coffee beans": "Food / Drinks"
+    }
     $("#entry_1, #entry_7").change(function(){
-        if ($(this).children(":selected").text() === "NOT A REGULAR") {
+        var choice = $(this).children(":selected").text();
+        $("#entry_6 option[value='" + itemCatMap[choice] + "']").attr("selected", "selected");
+
+        if (choice === "NOT A REGULAR") {
             $(this).next().show();
         } else {
             $(this).next().hide();
