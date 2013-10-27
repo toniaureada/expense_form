@@ -62,6 +62,7 @@
     }
     input, textarea {
       padding: 3px 1px;
+      border: 1px solid #CBC7BD;
     }
     input[type=submit] {
       width : 100%;
@@ -69,6 +70,7 @@
     }
     select {
       height: 30px;
+      border: 1px solid #CBC7BD;
     }
     hr {
       border-color: rgb(158, 80, 80);
