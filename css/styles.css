@@ -29,7 +29,7 @@
     }
     header h1 {
        color: rgb(158, 80, 80);
-       text-align: center;
+       text-align: right
     }
     .left {
         float: left;
@@ -102,14 +102,33 @@
     border-top:10px solid #F7F3DE;
     /* positioning */
     position:absolute;
-    /*
-    top:-17px;
-    left:60px;
-    */
     top:25px;
     left:50px;
   }
 
+   /*
+    * jQuery UI theme(pepper-grinder) overwrite for more intuitive button color.
+    */
+  .ui-state-default,
+  .ui-widget-content .ui-state-default,
+  .ui-widget-header .ui-state-default {
+    color: #D7CDB4;
+  }
+  .ui-state-default a,
+  .ui-state-default a:link,
+  .ui-state-default a:visited {
+    color: #D7CDB4;
+  }
+  .ui-state-active,
+  .ui-widget-content .ui-state-active,
+  .ui-widget-header .ui-state-active {
+    color: #140f06;
+  }
+  .ui-state-active a,
+  .ui-state-active a:link,
+  .ui-state-active a:visited {
+    color: #140f06;
+  }
 
 
 /* ---------------------------------------------------------
