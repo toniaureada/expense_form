@@ -35,6 +35,7 @@ $(function() {
     if (mm < 10) { mm = "0" + mm; }
     if (dd < 10) { dd = "0" + dd; }
     $("#entry_0").attr("value", mm + "/" + dd + "/" + yy).datepicker();
+    $("time").text(yy); //copyright in page footer.
 
     //item name & store name field
     var itemCatMap = {
