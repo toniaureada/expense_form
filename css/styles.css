@@ -29,7 +29,8 @@
     }
     header h1 {
        color: rgb(158, 80, 80);
-       text-align: right
+       text-align: right;
+       margin: 5px 0px;
     }
     .left {
         float: left;
