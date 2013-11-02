@@ -117,6 +117,10 @@
   .ui-widget-header .ui-state-default {
     color: #D7CDB4;
   }
+  .ss-choice-label {
+    color: #6E3737;
+    background: #9E5050;
+  }
   .ui-state-default a,
   .ui-state-default a:link,
   .ui-state-default a:visited {
@@ -126,6 +130,7 @@
   .ui-widget-content .ui-state-active,
   .ui-widget-header .ui-state-active {
     color: #140f06;
+    background: #ECEADF url(images/ui-bg_fine-grain_15_eceadf_60x60.png) 50% 50% repeat;
   }
   .ui-state-active a,
   .ui-state-active a:link,
