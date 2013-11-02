@@ -48,8 +48,7 @@ $(function() {
     }
     $("#entry_1, #entry_7").change(function(){
         var choice = $(this).children(":selected").text();
-        $("#entry_6 option[value='" + itemCatMap[choice] + "']").attr("selected", "selected");
-
+        $("#entry_6 option[value='" + itemCatMap[choice] + "']").prop("selected", "selected");
         if (choice === "NOT A REGULAR") {
             $(this).next().show();
         } else {
