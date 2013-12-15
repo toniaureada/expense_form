@@ -78,7 +78,9 @@
       margin: 20px 0;
     }
     #entry_2, #entry_8 {
+        /*
       display: none;
+      */
     }
     ul {
       list-style: none;

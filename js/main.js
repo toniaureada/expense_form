@@ -49,12 +49,11 @@ $(function() {
     }
 
 //onload
-var choice = $(this).children(":selected").text();
-$("#entry_6 option[value='" + itemCatMap[choice] + "']").prop("selected", "selected");
-if (choice === "NOT A REGULAR") {
-    $(this).next().show();
-} else {
-    $(this).next().hide();
+if($("#entry_1").children(":selected").text() !== "NOT A REGULAR") {
+    $("#entry_1").next().hide();
+}
+if($("#entry_7").children(":selected").text() !== "NOT A REGULAR") {
+    $("#entry_7").next().hide();
 }
 //onload
 
