@@ -61,9 +61,9 @@ if($("#entry_7").children(":selected").text() !== "NOT A REGULAR") {
         var choice = $(this).children(":selected").text();
         $("#entry_6 option[value='" + itemCatMap[choice] + "']").prop("selected", "selected");
         if (choice === "NOT A REGULAR") {
-            $(this).next().show();
+            $(this).next().text("").show();
         } else {
-            $(this).next().hide();
+            $(this).next().text("").hide();
         }
     })
     //checkboxs & radio buttons.
