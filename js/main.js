@@ -47,6 +47,17 @@ $(function() {
             "cafe": "Food / Drinks",
             "coffee beans": "Food / Drinks"
     }
+
+//onload
+var choice = $(this).children(":selected").text();
+$("#entry_6 option[value='" + itemCatMap[choice] + "']").prop("selected", "selected");
+if (choice === "NOT A REGULAR") {
+    $(this).next().show();
+} else {
+    $(this).next().hide();
+}
+//onload
+
     $("#entry_1, #entry_7").change(function(){
         var choice = $(this).children(":selected").text();
         $("#entry_6 option[value='" + itemCatMap[choice] + "']").prop("selected", "selected");
