@@ -48,14 +48,12 @@ $(function() {
             "coffee beans": "Food / Drinks"
     }
 
-//onload
-if($("#entry_1").children(":selected").text() !== "NOT A REGULAR") {
-    $("#entry_1").next().hide();
-}
-if($("#entry_7").children(":selected").text() !== "NOT A REGULAR") {
-    $("#entry_7").next().hide();
-}
-//onload
+    if($("#entry_1").children(":selected").text() !== "NOT A REGULAR") {
+        $("#entry_1").next().hide();
+    }
+    if($("#entry_7").children(":selected").text() !== "NOT A REGULAR") {
+        $("#entry_7").next().hide();
+    }
 
     $("#entry_1, #entry_7").change(function(){
         var choice = $(this).children(":selected").text();
