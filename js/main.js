@@ -57,18 +57,22 @@ $(function() {
 
     $("#entry_1, #entry_7").change(function(){
         var choice = $(this).children(":selected").text();
-        $("#entry_6 option[value='" + itemCatMap[choice] + "']").prop("selected", "selected");
+
         if (choice === "NOT A REGULAR") {
             $(this).next().val("").show();
         } else {
             $(this).next().val("").hide();
         }
         
-        //Automatically input American Spirit price..! Yes.
-        if (choice === "tabaco") {
-            $("#entry_4").val("460");
-        } else {
-            $("#entry_4").val("");
+        if ($(this).attr("id") === "entry_1") {
+            $("#entry_6 option[value='" + itemCatMap[choice] + "']").prop("selected", "selected");
+
+            //Automatically input American Spirit price..! Yes.
+            if (choice === "tabaco") {
+                $("#entry_4").val("460");
+            } else {
+                $("#entry_4").val("");
+            }
         }
     })
     //checkboxs & radio buttons.
