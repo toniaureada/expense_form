@@ -67,6 +67,8 @@ $(function() {
         //Automatically input American Spirit price..! Yes.
         if (choice === "tabaco") {
             $("#entry_4").val("460");
+        } else {
+            $("#entry_4").val("");
         }
     })
     //checkboxs & radio buttons.
